@@ -1,0 +1,44 @@
+.img-container {
+            width: 50%;
+            margin: 0 auto;
+        }
+        path {
+            fill: transparent;
+            transition: 1s;
+            stroke: transparent;
+            stroke-width: 2px;
+            opacity: 1;
+        }
+        #screen:hover {
+            fill: red;
+        }
+        #one:hover {
+            stroke: green;
+        }
+        #two:hover {
+            fill: blue;
+            stroke: yellow
+        }
+        #three:hover {
+            fill: grey;
+            opacity: 0.5
+        }
+
+
+
+    <div class="img-container">
+        <svg viewBox="0 0 960 714" height="100%" width="100%" version="1.1" id="svg4160">
+            <image width="960" height="714" preserveAspectRatio="none" src="images/wine_rack.gif" id=""/>
+            <path class="path" id="screen" data-placement="top" title="Screen!" d="m 303.80326,47.378347 263.07451,144.628633 0.41559,3.3248 -187.85098,154.18743 -6.6496,1.6624 -265.5681,-174.96741 z"></path>
+            <path id="one" class="path" data-placement="top" title="One!" d="m 511.81083,476.48487 32.00116,22.44237 10.80559,7.68859 4.57159,1.039 2.078,-1.4546 67.11933,-60.05413 1.039,-2.4936 -16.00059,-12.26018 -27.01397,-16.41619 -2.07799,-1.24679 -1.2468,0.4156 -22.85798,19.74097 -47.79394,39.48196 z"></path>
+            <path class="path" id="two" data-toggle="tooltip" data-placement="top" title="Two!" d="m 589.52794,411.23574 29.09197,17.66298 13.50698,11.01339 3.3248,0 77.71711,-78.34052 -1.039,-2.70139 -14.54598,-9.76659 -25.14377,-14.54599 -4.3638,-1.45459 -2.70139,2.07799 -76.67812,73.56112 1.4546,2.2858 z"></path>
+            <path class="path" id="three" data-placement="top" title="Three!"d="m 670.77765,331.23283 29.50757,15.37718 13.09138,9.97439 4.5716,0.4156 47.58614,-53.61234 0.8312,-3.117 -13.71478,-8.10419 -30.54657,-16.41618 -1.4546,0.8312 -48.41734,51.74214 z"></path>
+        </svg>
+    </div>
+    
+ <script>
+        function draw(){
+            ('.path').tooltip({container:'.img-container'});
+        }
+    </script>   
+    
