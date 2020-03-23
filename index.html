@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #FBFBFB";></body>
+<head>
+    <title>Schorr Lake | Home</title>
+    <style>
+       .disappear{
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            animation: disappear 0s linear 4.5s forwards;
+        } 
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        ul {
+            list-style-type: none; 
+            margin:0; 
+            padding: 0; 
+            font-family: arboria; 
+            font-size: 12pt; 
+            font-weight: 200;
+            width: 200px;
+            text-align: right;
+        }
+        @keyframes disappear{ 
+            to {opacity: 0} 
+        } 
+        .active {
+            font-weight: 300;
+        } 
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        h1{
+            font-family: arboria;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 200;
+            color: #6B1F28; 
+        }
+        aside{
+            font-family: arboria;
+        }
+        header{
+            font-family: arboria;
+            font-size: 30px;
+            text-align: center;
+            color: grey;
+        }
+        p1{
+            font-family: arboria;
+            text-decoration-color: #6B1F28;
+        }
+        h2{
+            font-family: arboria;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 150;
+        }
+    </style>
+    <img src="images/logo_animation.gif" class="disappear" align="middle"> 
+    <table style="width:100%">
+        <tr>
+        <th colspan="2"><img src="images/logo.gif" style="width: 60%; height: auto;"></th>
+        <th>
+            <ul>
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="wine.html">Wine Rack</a></li>
+                <li><a href="purchase">Shop</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+            </ul>
+        </th>
+        </tr>
+        
+        <tr>
+            <th> </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+    </table>
+</head>
+<body>
+    <div style="
+    display: flex;
+    flex-direction: column;
+">
+    <header>
+        Schorr Lake Vineyards and Winery
+    </header>
+    <main style="
+        /* Take the remaining height */
+        flex-grow: 1;
+
+        /* Layout the left sidebar, main content and right sidebar */
+        display: flex;
+        flex-direction: row;
+    ">
+        <!-- Left sidebar -->
+        <aside style=" width: 100%; padding: 10px;">
+            <h1> UPCOMING EVENTS</h1>
+            <p> Happy New Year!! Our winery will be open every weekend for the next 50 weekends. 
+                Stop by and enjoy a glass of wine with us. 
+                <br>
+                <br>
+                <br>
+                <br> Join us for our annual spring wine tasting! This event will feature wines that
+                we feel will be perfect for easter and springtime enjoyment. 
+                <br>
+                <br>
+                <br>
+                <br> Join us for the 7th Official Chicago Wine Fest: Spring Edition; 
+                an elevated wine tasting experience that aims to stimulate all of your senses. 
+                Sample premium varietals from some of the best wineries, all while music performers 
+                keep the party lively during this all-day, all-night wine experience.
+            </p></aside>
+
+        <!-- Main content -->
+        <article style="/* Take the remaining width */ flex-grow: 1; padding: 10px;">
+            <h1> OUR STORY</h1>
+            <p1>Schorr Lake Vineyards officially began in 1994 when we planted the first section of our 7 acre vineyard. We now have a total of 16 varieties of grapes. We also grow our own blackberries. The vineyard could never have become a reality without the efforts of many friends and family members. Although a tremendous amount of hours have gone into its' creation, it has been a labor of love and fun for all those who have been involved. <br>
+            The winery became bonded in September, 1997 and opened in October, 1998. Paul, however, has been practicing his wine-making skills for the past 18 years. The winery also has been an effort of friends and family and remains so today. New friends are always welcome to try their hand at picking grapes, wine making, bottling or any of the many other chores involved in achieving our finished product.<br>
+            When we decided to open a commercial winery, some very careful planning and decision making preceded our efforts. One of the decisions that we made and feel very strongly about is our ongoing commitment to quality. All wines produced at Schorr Lake are estate grown and estate produced. By producing all of our own quality fruits, we can be assured of the highest quality, most consistent product possible. We invite you to relax, sample our wines and enjoy your visit with us.</p1>
+            <img src="images/wine_glass.gif" style="width: 70%; align-content: center;">
+        </article>
+
+        <!-- Right sidebar -->
+        <nav style=" width: 100%; padding: 10px;"><h1> GENERAL</h1><h2>WHAT TO EXPECT FROM A VISIT</h2><p1>Warm smiles <br> Courteous and caring service <br> Our award winning wine!<br><br> </p1><h2>WE OFFER</h2><p1> Gift Baskets <br> Gift certificates <br> Custom Labels <br> Private Parties</p1> <h2> LOCATION </h2> <p1>Our winery and vineyard are located just outside of Waterloo, IL. on the edge of peaceful, picturesque Schorr Lake. A quiet wooded area where one can relax on the deck overlooking the 6-acre vineyard or enjoy the beauty of the sunset over the lake. Our winery features estate grown and produced table and fruit wines.</p1></nav>
+    </main>
+</div>
+</body>
+
+</html>
