@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #FBFBFB";></body>
+<head>
+    <title>Schorr Lake | Wine Rack</title>
+    <style>
+        @font-face {
+            font-family: arboria;
+            src: url('<link rel="stylesheet" href="https://use.typekit.net/gzk2atj.css">');*/
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .wine {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+        ul {
+            list-style-type: none; 
+            margin:0; 
+            padding: 0; 
+            font-family: arboria; 
+            text-decoration-color: #6B1F28; 
+            font-size: 12pt; 
+            font-weight: 200;
+            width: 200px;
+            text-align: right;
+        }
+        .active {
+            font-weight: 300;
+        }
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            color: #6B1F28;
+        }
+        @import url("https://use.typekit.net/gzk2atj.css");
+        wine{
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        p {
+            font-family: arboria; 
+            text-decoration-color: #6B1F28; 
+            font-size: 15pt; 
+            font-weight: 200;
+            text-align: center;
+        }
+    </style>
+    <style>
+        .bottle{
+            width: 25%
+        }
+    </style>
+    <table style="width:100%">
+        <tr>
+        <th colspan="2"><img src="images/logo.gif" style="width: 60%; height: auto;"></th>
+        <th>
+            <ul>
+                <li><a  href="home.html">Home</a></li>
+                <li><a class="active" href=wine.html>Wine Rack</a></li>
+                <li><a href="purchase">Shop</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+            </ul>
+        </th>
+        </tr>
+        
+        <tr>
+            <th> </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+    </table>
+</head>
+<body>
+    <p> SCROLL OVER A BOTTLE TO LEARN MORE ABOUT THE WINE</p>
+    <table style="width:90%; align-content: left;">
+        <tr>
+            <th class="bottle"><img id="img1" src="images/wines/blackberry_port_bottle.gif" style="height: 70%"></th>
+            <th class="bottle"><img id="img2" src="images/wines/vignoles_bottle.gif" style="height: 70%"></th>
+            <th class="bottle"><img id="img3" src="images/wines/cabernet_franc_bottle.gif" style="height: 70%"></th>
+        </tr>
+    </table>
+    <img id="img4" src="images/wines/blackberryport_information.gif" class="wine">
+    <img id="img5" src="images/wines/vignoles_information.gif" class="wine">
+    <img id="img6" src="images/wines/cabernetfranc_information.gif" class="wine">
+    <script>
+        var img1= document.getElementById("img1"),
+            img2= document.getElementById("img2"),
+            img3= document.getElementById("img3"),
+            img4= document.getElementById("img4"),
+            img5= document.getElementById("img5"),
+            img6= document.getElementById("img6");
+        
+        img2.onmouseover = function(){
+            img5.style.display = "block";
+        }
+        img2.onmouseout = function(){
+            img5.style.display = "none";
+        }
+        img3.onmouseover = function (){
+            img6.style.display = "block";
+        }
+        img3.onmouseout = function (){
+            img6.style.display = "none";
+        }
+        img1.onmouseover = function(){
+            img4.style.display = "block";
+        }
+        img1.onmouseout = function(){
+            img4.style.display = "none";
+        }
+        
+    </script>
+</body>
+
+</html>
